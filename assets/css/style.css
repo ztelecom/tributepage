@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+    height: 65px;
+    background-color: #000;
+    color: #FFF;
+}
+.top {
+    display: flex;
+    align-items: center;
+}
+.head_desc {
+    display: flex;
+    flex-direction: column;
+}
+.heade_desc_title {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.heade_desc_name {
+    font-size: 15px;
+    font-family: Arial;
+    margin-right: 10px;
+    color: #777;
+}
+.heade_desc_name:hover {
+    color: #FFF;
+}
+.heade_desc_bt_seguir {
+    display: flex;
+    background-color: rgb(24, 240, 114);
+    color: #000;
+    border-radius: 3px;
+    padding: 3px;
+    font-family: Arial;
+    margin-top: 1px;
+
+    
+}
+.heade_desc_bt_seguir_icon {
+    margin-right: 6px;
+    font-weight: bold;
+}
+.heade_desc_bt_seguir_text {
+    font-size: 15px;
+}
+.heade_desc_autor {
+    display: flex;
+    align-items: center;
+}
+header .head_logo img {
+    width: 50px;
+}
+
+.head_options .icon{
+    background-image: url("../img/icon_bt_curtir-off.png");
+    background-size: 18px;
+    background-repeat:  no-repeat;
+    background-position: center;
+    height: 18px;
+    width: 18px;
+
+
+}
+
+
+.head_options {
+    display: flex;
+    align-items: center;
+    font-family: Arial;
+}
+.head_menu {
+    display: flex;
+    align-items: center;
+}
+.botoes {
+    width: auto;
+    padding: 15px;
+    background-color: #777;
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.botoes:hover {
+    background-color: #555;
+}
+
+.diff {
+    background-color: rgb(24, 240, 114);
+    color: #000;
+}
+
+.diff:hover {
+    background-color: rgb(10, 151, 69);
+    color: #FFF;
+} 
+
+
+/*Tratando conteudo*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: #EEE;
+    border-radius: 1px;
+    flex-wrap: nowrap;
+}
+
+.container .title {
+    margin-top: 10px;
+
+    font-family: Arial;
+    font-size: 50px;
+    color: #555;
+}
+
+.container .sub_title {
+    margin-top: 5px;
+    margin-bottom: 50px;
+
+    font-family: Arial;
+    font-size: 20px;
+    font-style: italic;
+    color: #AAA;
+    text-shadow: 1px 1px#CCC;
+}
+.container article {
+    width: 100%;
+}
+
+.container article .conteudo {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+}
+.foto .referecia_biblica {
+    background-image: url("../img/biblia.png");
+    background-size: cover;
+    width: 250px;
+    height: 190px;
+    align-self: center;
+}
+.referecia_bb_txt {
+    color:#333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.conteudo_text {
+    display: flex;
+    flex-direction: column;
+}
+.conteudo .foto .foto_1{
+    background-image: url("../img/David_Miranda.jpg");
+    background-size: cover;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #CCC;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+.conteudo .foto .foto_1:hover{
+    background-image: url("../img/davidmiranda2.jfif");
+
+}
+.conteudo .conteudo_text_topic {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: Arial;
+    line-height: 25px;
+
+}
+.conteudo .conteudo_bar_vertical {
+    height: auto;
+    width: 20px;
+    background-color: #DDD;
+    margin-right: 15px;
+
+
+}
+.conteudo_text_topic_flexDirection {
+    display: flex;
+    justify-content: space-between;
+}
+.timeline_title {
+    display: flex;
+    align-items: center;
+
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.timeline_title .timeline_text {
+    color: #555;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.timeline_title img {
+    width: 25px;
+    margin-right: 5px;
+}
+.timeline_bar {
+    height: 1px;
+    width: 100%;
+    background-color: #DDD;
+    margin-bottom: 25px;
+}
+.collumn {
+    display: flex;
+    flex-direction: column;
+}
+.timeline {
+    display: flex;
+    align-items: center;
+
+    background-color: #AAA;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-left: 20px solid #777;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 20px solid #777;
+
+}
+.timeline_ano {
+    margin: 8px;
+    background-color: #AAA;
+    align-self: center;
+    border-radius: 150px;
+    color: #FFF;
+    text-shadow: 1px 1px #000;
+    box-shadow: 1px 1px 1px 1px #000;
+    padding: 3px;
+}
+.timeline_text {
+    font-family: Arial;
+    color: #333;
+    line-height: 20px;
+}
+.timeline:hover {
+    background-color: #CCC;
+    border-left: 20px solid #aaa;
+    border-right: 20px solid #aaa;
+}
+.conteudo .reference {
+    display: flex;
+    align-items: center;
+    line-height: 19px;
+
+}
+.conteudo .reference img {
+    width: 20px;
+    margin: 8px;
+    background-color: blue;
+}
+.reference_text {
+    line-height: 20px;
+    font-size: 16px;
+    font-family: Arial;
+}
+.reference_text a{
+    margin-left: 3px;
+    text-decoration: none;
+    color: #088efc;
+}
+.fundo {
+    background-color: #FFF;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: Arial;
+}
+.fundo b{
+    font-weight: normal;
+    color: #555;
+    font-style: italic;
+}
+
+
