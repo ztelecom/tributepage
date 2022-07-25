@@ -81,7 +81,7 @@ header .head_logo img {
     font-family: Arial;
 }
 .head_menu {
-    display: flex;
+    display: flex !important;
     align-items: center;
 }
 .botoes {
@@ -116,7 +116,7 @@ header .head_logo img {
     margin-left: 8%;
     margin-right: 8%;
     background-color: #EEE;
-    border-radius: 1px;
+    border-radius: 7px;
     flex-wrap: nowrap;
 }
 
@@ -168,6 +168,12 @@ header .head_logo img {
     width: 250px;
     height: 190px;
     align-self: center;
+}
+.foto_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .referecia_bb_txt {
     color:#333;
@@ -308,4 +314,345 @@ header .head_logo img {
 }
 
 
+
+@media (min-width: 961px) and (max-width:1150px) {
+    .head_menu {
+        display: flex !important;
+    }
+
+    .resposivo {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .conteudo .foto {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .foto .referecia_biblica{
+        width: 100px;
+        height: 68px;
+    }
+    .conteudo .foto_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteudo .foto .foto_1{
+        width: 280px;
+        height: 150px;
+    }
+    .referecia_bb_txt {
+        font-size: 12px;
+    }
+    .heade_desc_title {
+    font-size: 16px;
+    }
+}
+
+@media (min-width:859px) and (max-width: 960px) {
+    .head_menu {
+        display: flex !important;
+    }
+    .botoes {
+        font-size: 12px;
+    }
+    .head_options .icon {
+        height: 14px;
+    }
+    .heade_desc_name,
+    .heade_desc_bt_seguir_text {
+        font-size: 12px;
+    }
+     .heade_desc_bt_seguir_text {
+        align-self: center;
+    }
+    .container .title {
+        font-size: 35px;
+    }
+    .container .sub_title {
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+    .heade_desc_title {
+        font-size: 15px;
+    }
+    .resposivo {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width:768px) and (max-width:858px) {
+    .head_menu {
+        display: flex !important;
+    }
+    .resposivo {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .heade_desc_title {
+        font-size: 12px;
+    }
+    .botoes {
+        font-size: 10px;
+    }
+    .head_options .icon {
+        background-size: 10px;
+        padding: 11px;
+    }
+    .container .title {
+        font-size: 35px;
+    }
+    .container .sub_title {
+        font-size: 12px;
+        margin-bottom: 35px;
+    }
+
+
+}
+
+@media (min-width: 425px) and (max-width:767px) {
+    .resposivo {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .heade_desc_title {
+        font-size: 12px;
+    }
+    .botoes {
+        font-size: 10px;
+    }
+    .head_options .icon {
+        background-size: 10px;
+        padding: 11px;
+    }
+    .container .title {
+        font-size: 25px;
+    }
+    .container .sub_title {
+        display: flex;
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 35px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+
+    }
+    .head_menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 49px;
+        right: 11px;
+        background-color: #eee;
+        align-items: flex-start;
+        border: 1px solid #CCC;
+
+    }
+    .bt_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bt_mobile .bt_mm {
+        width: 40px;
+        height: 3px;
+        border: 1px solid #FFF;
+        background-color: #FFF;
+
+        margin-bottom: 5px;
+    }
+    .head_options .icon {
+        border: 1px solid #222;
+        align-self: center;
+        background-color: rgb(24, 240, 114);
+        margin-top: 5px;
+    }.head_options .icon:hover {
+       
+        background-color: rgb(6, 221, 96);
+
+    }
+
+    .botoes {
+        font-size: 12px;
+        background-color: #eee;
+        color: #777;
+        font-weight: bold;
+    }
+    .conteudo .foto {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+     
+    }
+    .conteudo .foto .foto_1 {
+        width: 225px;
+        height: 150px;
+        flex-wrap: nowrap;
+        border: 1px solid #CCC;
+        padding: 5px;
+        border-radius: 5px;
+        margin-right: 0;
+   
+    }
+    .foto .referecia_biblica{
+        width: 150px;
+        height: 105px;
+
+      
+    }
+    .referecia_bb_txt {
+        font-size: 12px;
+    }
+    .conteudo .conteudo_text_topic {
+        font-size: 12px;
+    }
+    .timeline{
+        flex-direction: column;
+    }
+    .timeline_text{
+        font-size: 12px;
+    }
+    .reference_criator,
+    .reference_text{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:424px) {
+
+    .resposivo {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .heade_desc_title {
+        font-size: 12px;
+    }
+    .head_menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 49px;
+        right: 11px;
+        background-color: #eee;
+        align-items: flex-start;
+        border: 1px solid #CCC;
+
+    }
+    .bt_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bt_mobile .bt_mm {
+        width: 40px;
+        height: 3px;
+        border: 1px solid #FFF;
+        background-color: #FFF;
+
+        margin-bottom: 5px;
+    }
+    .head_options .icon {
+        border: 1px solid #222;
+        align-self: center;
+        background-color: rgb(24, 240, 114);
+        margin-top: 5px;
+    }.head_options .icon:hover {
+       
+        background-color: rgb(6, 221, 96);
+
+    }
+
+    .botoes {
+        font-size: 12px;
+        background-color: #eee;
+        color: #777;
+        font-weight: bold;
+    }
+    .container .title {
+        font-size: 25px;
+    }
+    .container .sub_title {
+        display: flex;
+        text-align: center;
+        font-size: 12px;
+        margin-bottom: 35px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+
+    
+
+    }
+    .conteudo .foto {
+        width: 100%;
+        justify-content: center;
+
+     
+    }
+    .conteudo .foto .foto_1 {
+        width: auto;
+        height: 100px;
+        flex-wrap: nowrap;
+        border: 1px solid #CCC;
+        padding: 5px;
+        border-radius: 5px;
+        margin-right: 0;
+   
+    }
+    .foto .referecia_biblica{
+        width: 150px;
+        height: 105px;
+
+      
+    }
+    .referecia_bb_txt {
+        font-size: 12px;
+    }
+    .conteudo .conteudo_text_topic {
+        font-size: 12px;
+    }
+    .timeline{
+        flex-direction: column;
+    }
+    .heade_desc_bt_seguir_icon,
+    .heade_desc_bt_seguir_text,
+    .timeline_text,
+    .referecia_bb_txt,
+    .conteudo .conteudo_text_topic,
+    .reference_criator,
+    .reference_text{
+        font-size: 10px;
+    }
+    .heade_desc_autor{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .heade_desc_bt_seguir_text{
+        display: flex;
+        align-items: center;
+    }
+    .conteudo .reference img {
+        width: 15px;
+    }
+    .reference_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
 

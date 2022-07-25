@@ -3,9 +3,10 @@
 <head>
     <title>Pagina de Tributo</title>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
-<body>
+<body class="bt">
     <header>
         <div class="top">
             <div class="head_logo">
@@ -26,6 +27,31 @@
             </div>
         </div>
         <div class="head_options">
+            <script type="text/javascript">
+                window.onload = function(){
+                    document.querySelector(".bt_mobile").addEventListener("click", function(){
+                        if(document.querySelector(".head_menu").style.display =='flex') {
+                            document.querySelector(".head_menu").style.display = 'none';
+                        }else{
+                            document.querySelector(".head_menu").style.display = 'flex';
+                        }
+                    });
+
+                    document.querySelector("section").addEventListener("click", function(){
+                        if(window.screen.width > 767){
+                            document.querySelector(".head_menu").style.display = 'flex';
+                        };
+                    });
+                 
+                };
+
+            
+            </script>
+            <div class="bt_mobile">
+                <div class="bt_mm"></div>
+                <div class="bt_mm"></div>
+                <div class="bt_mm"></div>
+            </div>
             <div class="head_menu">
                 <div class="botoes icon"></div>
                 <div class="botoes">Ver em tela Cheia</div>
@@ -42,14 +68,15 @@
             <div class="title">David Martins Miranda</div>
             <div class="sub_title">Missionario, Pastor Envagélico, Fundador da Igreja Pentecostal Deus é Amor.</div>
             <article>
-                <div class="conteudo">
+                <div class="conteudo resposivo">
                     <div class="foto">
                         <div class="foto_1"></div>
-                        <!--<img src="assets/img/David_Miranda.jpg"> -->
-                        <div class="referecia_biblica"></div>
-                        <div class="referecia_bb_txt">
-                            <q>Combati o bom combate, acabei a carreira, guardei a fé</q>
-                            <b>(2 Timóteo 4.7)</b>
+                        <div class="foto_2">
+                            <div class="referecia_biblica"></div>
+                            <div class="referecia_bb_txt">
+                                <q>Combati o bom combate, acabei a carreira, guardei a fé</q>
+                                <b>(2 Timóteo 4.7)</b>
+                            </div>
                         </div>
                     </div>
                     <div class="conteudo_text">
